@@ -1,0 +1,278 @@
+*, :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+}
+*, :after, :before, legend, td, th {
+  padding: 0;
+}
+div{
+  display: block;
+}
+body, button, input, select, textarea {
+  font-size: 14px;
+  color: #333;
+}
+body {
+  margin: 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+html, button, input, select, textarea {
+  font-family: -apple-system, BlinkMacSystemFont, AppleSDGothicNeo, "Apple SD Gothic Neo", Helvetica, "Noto Sans KR", "malgun gothic", "맑은 고딕", sans-serif;
+}
+html {
+  line-height: 1.15;
+}
+button {
+  border-radius: 0;
+  overflow: visible;
+  background-color: transparent;
+  border: none;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: center;
+  align-items: flex-start;
+
+}
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+}
+button, input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+button, select {
+  text-transform: none;
+}
+h1{
+  display: block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;  
+}
+label{
+  cursor: default;
+}
+form{
+  display: block;
+}
+input:not([type="range"]):not([type="color"]) {
+  writing-mode: horizontal-tb !important;
+}
+input[type="text" i] {}
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+input{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+  background-color: field;   
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="checkbox" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  border: initial;
+}
+svg :not(:root){
+  overflow: hidden; 
+  overflow-clip-margin: content-box; 
+}
+svg{
+  width: 24;
+  height: 24;
+  fill: none;  
+}
+a{
+  background-color: transparent;
+  text-decoration: none;
+}
+button[disabled], input[disabled] {
+  cursor: default;
+}
+@media screen and (max-width:374px){
+  html{}
+}
+@media (max-width: 375px){
+  .title_{
+    padding: 0px 32px;
+  }
+}
+.top_space{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 0px; 
+}
+.top_space1{
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  z-index: -1;
+  transform: translateY(-1px);
+  background-color: rgb(255, 255, 255);  
+}
+.top_space2{
+  position: relative;
+  min-height: 44px;
+}
+.button_area{
+  height: 100%;
+  top: 0px;
+  left: 5px;
+  position: absolute;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+}
+.before_button{
+  width: 43px;
+  height: 43px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgdmlld0JveD0iMCAwIDUwIDUwIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTTAgMGg1MHY1MEgweiIvPgogICAgICAgIDxwYXRoIHN0cm9rZT0iIzMzMyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIgZD0iTTI3IDMyLjA3MUwxOS45MjkgMjUgMjcgMTcuOTI5Ii8+CiAgICA8L2c+Cjwvc3ZnPgo=);
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+  border: none; 
+}
+.title_text{
+  width: 100%;
+  height: 100%;
+  padding-left: unset;
+  padding-right: unset;
+  padding-inline: 49px;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateZ(0px);
+  text-align: center;
+  color: rgb(51, 51, 51);  
+}
+.title_{
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  pointer-events: auto;
+}
+.title_area{
+  min-height: 44px;
+  transition: height 0.4s linear 0s;
+}
+.prove_area{
+  position: fixed;
+  width: 100%;
+  top: 44px;
+  left: 0px;
+  z-index: 1000;
+  background-color: white;
+  padding: 0px 15px;
+  margin: 0px;
+  box-shadow: rgb(221, 221, 221) 0px -0.5px 0px 0px inset;
+  display: flex;
+  flex-wrap: nowrap;
+  text-align: center;  
+}
+.prove_email{
+  display: block;
+  flex-grow: 1;
+  position: relative;
+  height: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(95, 0, 128);
+  line-height: 18px;
+  box-shadow: rgb(95, 0, 128) 0px -2px 0px 0px inset
+}
+.prove_end{
+  min-height: 48px;
+}
+.input_prove{
+  padding: 24px 20px;
+}
+.name_area{
+  box-sizing: border-box;
+  margin: 0;
+}
+.name_area2{
+  padding-bottom: 12px;
+}
+.name_t{
+  display: inline-block;
+  padding: 8px 0px 11px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  color: rgb(51, 51, 51);
+}
+.input_name2{
+  position: relative;
+  height: 48px;
+}
+.input_content{
+  width: 100%;
+  height: 46px;
+  padding: 0 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  outline: none;
+  box-sizing: border-box; 
+}
+.confirm_area{
+  margin-top: 18px;
+}
+.confirm_button:disabled{
+  background-color: rgb(221, 221, 221);
+}
+.confirm_button{
+  display: block;
+  padding: 0 10px;
+  text-align: center;
+  overflow: hidden;
+  width: 100%;
+  height: 52px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #5f0080;
+  border: 0 none;
+}
+.join_text{
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+
+}
