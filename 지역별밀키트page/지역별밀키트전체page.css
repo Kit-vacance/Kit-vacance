@@ -318,6 +318,8 @@
   color: inherit;
 }
 
+
+
 .section{
   margin-top: 0px;
   overflow: visible !important;
@@ -337,25 +339,6 @@
 #container {
   margin: 0 auto;
   position: relative;
-}
-
-.banner {
-  /* padding-bottom: 15px; */
-}
-
-
-.banner-a {
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-}
-.banner-img{
-  width: 100%;
-  vertical-align: top;
-  max-width: 100%;
-  overflow-clip-margin: content-box;
-  overflow: clip;
 }
 
 
@@ -425,7 +408,7 @@
   right: 50px;
   top: 35px;
   width: 104px;
-  height: 75px;
+  height: 220px;
   border-radius: 6px;
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 10px;
@@ -513,6 +496,8 @@
   list-style-type: none;
   list-style-position: inside; */
   
+  list-style-type: none;
+
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -531,7 +516,8 @@
 
 
 
-.local-li{
+
+.Seoul.Gyeonggi-li{
   /* display: flex; */
   /* text-align: -webkit-match-parent; */
   list-style-type: none;
@@ -553,7 +539,7 @@
   right: 23px;
 }
 
-.local-li a{
+.Seoul.Gyeonggi-li a{
   display: block;
   overflow: hidden;
   padding: 0 16px 16px 0;
@@ -566,7 +552,7 @@
   text-decoration: none;
 }
 
-.kind-li {
+.Incheon-li {
   list-style-type: none;
   box-sizing: border-box;
   margin: 0;
@@ -580,12 +566,12 @@
 
 
   position: absolute;
-  top: 43px;
+  top: 40px;
   right: 23px;
 
 }
 
-.kind-li a{
+.Incheon-li a{
   display: block;
   overflow: hidden;
   padding: 0 16px 16px 0;
@@ -597,6 +583,189 @@
   background-color: transparent;
   text-decoration: none;
 }
+
+.Chungcheong-do-li {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+
+
+
+  text-align: left;
+  /* padding-left: 18px; */
+
+  /* display: none; */
+
+
+  position: absolute;
+  top: 69px;
+  right: 23px;
+
+}
+
+.Chungcheong-do-li a{
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 16px 0;
+  width: 45px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.Gangwon-do-li {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+
+
+
+  text-align: left;
+  /* padding-left: 18px; */
+
+  /* display: none; */
+
+
+  position: absolute;
+  top: 100px;
+  right: 23px;
+
+}
+
+.Gangwon-do-li a{
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 16px 0;
+  width: 45px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.Jeolla-do-li {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+
+
+
+  text-align: left;
+  /* padding-left: 18px; */
+
+  /* display: none; */
+
+
+  position: absolute;
+  top: 130px;
+  right: 23px;
+
+}
+
+.Jeolla-do-li a{
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 16px 0;
+  width: 45px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+.Gyeongsang-li {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+
+
+
+  text-align: left;
+  /* padding-left: 18px; */
+
+  /* display: none; */
+
+
+  position: absolute;
+  top: 160px;
+  right: 23px;
+
+}
+
+.Gyeongsang-li a{
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 16px 0;
+  width: 45px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.JejuIsland-li {
+  list-style-type: none;
+  box-sizing: border-box;
+  margin: 0;
+
+
+
+  text-align: left;
+  /* padding-left: 18px; */
+
+  /* display: none; */
+
+
+  position: absolute;
+  top: 190px;
+  right: 23px;
+
+}
+
+.JejuIsland-li a{
+  display: block;
+  overflow: hidden;
+  padding: 0 16px 16px 0;
+  width: 45px;
+  font-size: 14px;
+  color: rgb(51, 51, 51);
+  white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.05);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1263,6 +1432,19 @@
   white-space: nowrap;
   color: rgb(51, 51, 51);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

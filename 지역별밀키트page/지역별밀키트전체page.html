@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>킷캉스</title>
-  <link rel="stylesheet" href="신상밀키트page.css?after">
+  <title>지역별밀키트</title>
+  <link rel="stylesheet" href="지역별밀키트전체page.css">
 </head>
 <body>
   <div id="wrap">
@@ -52,11 +52,6 @@
     <div class="section">
       <div class="section-1">
         <div id="container">
-          <div class="banner">
-            <a href="" class="banner-a">
-              <img src="../신상밀키트_사진들/밀키트신상배너사진_조정후.jpg" alt="" class="banner-img">
-            </a>
-          </div>
           <div class="food">
             <div class="food-1">
               <div class="line">
@@ -71,11 +66,26 @@
                   </div>
                   <div class="y2">
                     <ul class="local.kind-ul">
-                      <li class="local-li">
-                        <a href="">지역별</a>
+                      <li class="Seoul.Gyeonggi-li" style="list-style-type: none; position: absolute; right: 23px; top: 12px;">
+                        <a href="" style="text-decoration: none; color: rgb(51, 51, 51);">서울/경기</a>
                       </li>
-                      <li class="kind-li">
-                        <a href="">종류별</a>
+                      <li class="Incheon-li">
+                        <a href="">인천</a>
+                      </li>
+                      <li class="Chungcheong-do-li">
+                        <a href="">충청도</a>
+                      </li>
+                      <li class="Gangwon-do-li">
+                        <a href="">강원도</a>
+                      </li>
+                      <li class="Jeolla-do-li">
+                        <a href="">전라도</a>
+                      </li>
+                      <li class="Gyeongsang-li">
+                        <a href="">경상도</a>
+                      </li>
+                      <li class="JejuIsland-li">
+                        <a href="">제주도</a>
                       </li>
                   </ul>
                   </div>
@@ -230,7 +240,7 @@
   const m2 = document.querySelector(".mealkit-label-1");
 
   m1.addEventListener("click", (e) => {
-    window.location = '신상밀키트page.html';
+    window.location = '지역별밀키트전체page.html';
   })
 
   m2.addEventListener("click", (e) => {
@@ -269,5 +279,11 @@
   kind_color.addEventListener("click", (e) => {
     e.target.style.color = 'darkviolet';
   })
+
+
+  const locals = document.querySelectorAll(".local.kind-ul li");
+  const locals_a = document.querySelectorAll(".local.kind-ul a");
+
+  
 </script>
 </html>
