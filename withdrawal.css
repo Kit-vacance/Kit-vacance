@@ -1,0 +1,226 @@
+body, button, input, select, textarea {
+  font-size: 14px;
+  color: #333;
+}
+body {
+  display: block;
+  margin: 0;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+}
+button, input[type=button], input[type=reset], input[type=submit] {
+  cursor: pointer;
+}
+button{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-indent: 0px;
+  text-shadow: none;
+  align-items: flex-start;
+
+}
+div {
+  display: block;
+}
+body, html {
+  height: 100%;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+*, :after, :before, legend, td, th {
+  padding: 0;
+}
+:root {
+  --swiper-theme-color: #007aff;
+}
+html, button, input, select, textarea {
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+}
+html {
+  line-height: 1.15;
+  touch-action: manipulation;
+  -ms-text-size-adjust: 100%;
+}
+button, input, optgroup, select, textarea {
+  font: inherit;
+  margin: 0;
+ 
+}
+ol, ul {
+  list-style-type: none;
+}
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+li {
+  display: list-item;
+  
+}
+a{
+  text-decoration: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+  overflow-clip-margin: content-box;
+}
+svg{
+  width: 19;
+  height: 19;
+}
+h2{
+  display: block;
+}
+form{display: block;}
+label{
+  cursor: default;
+}
+
+input:not([type="range"]):not([type="color"]) {
+  writing-mode: horizontal-tb !important;
+}
+input:not([type="file" i], [type="image" i], [type="checkbox" i], [type="radio" i]) {
+}
+input[type="text" i] {
+}
+input{
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  display: inline-block;
+  text-align: start;
+  appearance: auto;
+  cursor: text;
+  background-color: field;
+}
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="radio" i] {
+  background-color: initial;
+  cursor: default;
+  appearance: auto;
+  border: initial;
+}
+.withdrawal_area{
+  width: 640px;
+  margin: 0px auto;
+}
+.withdrawal_title{
+  padding: 50px 0px 51px;
+  border-bottom: 2px solid rgb(51, 51, 51);
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: -1px;
+  text-align: center; 
+}
+.withdrawal_detail{
+  color: rgb(102, 102, 102);
+  line-height: 22px;
+}
+.notice_withdrawal{
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+}
+.modify_id1{
+  width: 139px;
+  padding-top: 12px;
+}
+.chapter2_t{
+  font-weight: 500;
+  color: rgb(51, 51, 51);
+  line-height: 20px;
+}
+.input_outline{
+  flex: 1 1 0%;
+}
+.notice_withdrawal2{
+  padding-top: 10px;
+}
+.notice_withdrawal3{
+  display: block;
+  padding: 19px 0px 12px;
+  font-weight: normal;
+  color: rgb(95, 0, 128);
+}
+.modify_id{
+  display: inline-flex;
+  width: 100%;
+  padding: 10px 20px;
+}
+.input_info2{
+  position: relative;
+  height: 48px;
+}
+.notice_withdrawal input{
+  font-size: 14px;
+}
+.input_content{
+  width: 100%;
+  height: 46px;
+  padding: 0px 11px 1px 15px;
+  border-radius: 4px;
+  border: 1px solid rgb(221, 221, 221);
+  font-weight: 400;
+ 
+  line-height: 1.5;
+  color: rgb(51, 51, 51);
+  outline: none;
+  box-sizing: border-box;
+
+}
+.block_{
+  width: 120px;
+  margin-left: 8px;
+}
+.button_witdrawal{
+  display: flex;
+  justify-content: center;
+  padding: 40px 0px 60px;
+}
+.button_cancel{
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  height: 44px;
+  color: rgb(95, 0, 128);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(95, 0, 128);
+  width: 120px;
+  margin: 0px 4px;
+  border-radius: 3px;
+}
+.button_cancel > span {
+  font-size: 14px;
+}
+.add_address2{
+  display: inline-block;
+  font-weight: 500;
+}
+.button_witdrawal2{
+  display: block;
+  padding: 0px 10px;
+  text-align: center;
+  overflow: hidden;
+  height: 44px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(95, 0, 128);
+  border: 0px none;
+  width: 120px;
+  margin: 0px 4px;
+  border-radius: 3px;
+}
