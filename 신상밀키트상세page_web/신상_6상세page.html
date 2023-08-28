@@ -249,9 +249,9 @@
               </div>
             </div>
             <div class="direct-check">
-              <button class="b1">
+              <button class="b1" onclick="heart()">
                 <span>
-                  <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzIiIGhlaWdodD0iMzIiIHZpZXdCb3g9IjAgMCAzMiAzMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yNS44MDcgNy44NjNhNS43NzcgNS43NzcgMCAwIDAtOC4xNzIgMEwxNiA5LjQ5N2wtMS42MzUtMS42MzRhNS43NzkgNS43NzkgMCAxIDAtOC4xNzMgOC4xNzJsMS42MzQgMS42MzQgNy40NjYgNy40NjdhMSAxIDAgMCAwIDEuNDE1IDBzMCAwIDAgMGw3LjQ2Ni03LjQ2N2gwbDEuNjM0LTEuNjM0YTUuNzc3IDUuNzc3IDAgMCAwIDAtOC4xNzJ6IiBzdHJva2U9IiM1RjAwODAiIHN0cm9rZS13aWR0aD0iMS42IiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K" alt="">
+                  <img src="../밀키트_사진들/찜_하트(빈것).svg" alt="">
                 </span>
               </button>
               
@@ -550,15 +550,17 @@
     
   }
 
+  function heart() {
+    const heart = document.querySelector(".direct-check .b1");
+    const img = document.querySelector(".direct-check .b1 img");
 
+   
+    if(img.src !== "../밀키트_사진들/찜하트(빈것).svg"){
+      img.src = "../밀키트_사진들/찜_빨간색하트.svg"
+    }
+    
 
-
-
-
-
-
-  const heart = document.querySelector(".direct-check .b1");
-  const img = document.querySelector(".direct-check .b1 img");
+  }
 
 
 </script>
