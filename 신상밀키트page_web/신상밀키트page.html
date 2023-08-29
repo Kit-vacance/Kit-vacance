@@ -67,59 +67,37 @@
             <div class="wrap-nav-category">
               <nav class="nav-category">
                 <li class="nav-li">
-                  <a href="https://dowhateveryouwant1661.tistory.com/entry/nav-%EC%83%81%EB%8B%A8%EC%97%90-%EA%B3%A0%EC%A0%95%EC%8B%9C%ED%82%A4%EB%8A%94-%EB%B0%A9%EB%B2%95" class="술안주link">
-                    <span class="술안주span">술안주</span>
-                  </a>
+                  술안주
                 </li>
                 <li class="nav-li">
-                  <a href="https://mail.google.com/mail/u/0/" class="스테이크link">
-                    <span class="스테이크span">스테이크</span>
-                  </a>
+                  스테이크
                 </li>
                 <li class="nav-li">
-                  <a href="" class="국/탕/찌개link">
-                    <span class="국/탕/찌개span">국/탕/찌개</span>
-                  </a>
+                  국/탕/찌개
                 </li>
                 <li class="nav-li">
-                  <a href="" class="중식link">
-                    <span class="중식span">중식</span>
-                  </a>
+                  중식
                 </li>
                 <li class="nav-li">
-                  <a href="" class="분식link">
-                    <span class="분식span">분식</span>
-                  </a>
+                  분식
                 </li>
                 <li class="nav-li">
-                  <a href="" class="아시안link">
-                    <span class="아시안span">아시안</span>
-                  </a>
+                  아시안
                 </li>
                 <li class="nav-li">
-                  <a href="" class="볶음link">
-                    <span class="볶음span">볶음</span>
-                  </a>
+                  볶음
                 </li>
                 <li class="nav-li">
-                  <a href="" class="조리/찜link">
-                    <span class="조리/찜span">조리/찜</span>
-                  </a>
+                  조리/찜
                 </li>
                 <li class="nav-li">
-                  <a href="" class="덮밥/비빔밥link">
-                    <span class="덮밥/비빔밥span">덮밥/비빔밥</span>
-                  </a>
+                  덮밥/비빔밥
                 </li>
                 <li class="nav-li">
-                  <a href="" class="음료link">
-                    <span class="음료span">음료</span>
-                  </a>
+                  음료
                 </li>
                 <li class="nav-li">
-                  <a href="" class="기타link">
-                    <span class="기타span">기타</span>
-                  </a>
+                  기타
                 </li>
               </nav>
             </div>
@@ -722,62 +700,29 @@
   categoryshow.addEventListener("mouseout", (e) => {
     categoryshow.style.display = 'none';
   })
-  const color = document.querySelectorAll(".nav-li span");
-  color.forEach((item) => item.addEventListener("mouseover", (e) =>{
-    e.target.style.color = 'darkviolet';
-  }))
-  color.forEach((item) => item.addEventListener("mouseout", (e) =>{
-    e.target.style.color = 'black';
-  }))
-
-  const local_button = document.querySelector(".local-button");
-  const local_nav = document.querySelector(".local-nav");
-  local_button.addEventListener("click", (e) => {
-    if(local_nav.style.display === 'none') {
-      local_nav.style.display = 'block';
-    }else{
-      local_nav.style.display = 'none';
-    }
-    
-  })
+  // const color = document.querySelectorAll(".nav-li span");
+  // color.forEach((item) => item.addEventListener("mouseover", (e) =>{
+  //   e.target.style.color = 'darkviolet';
+  // }))
+  // color.forEach((item) => item.addEventListener("mouseout", (e) =>{
+  //   e.target.style.color = 'black';
+  // }))
 
 
-  const locals = document.querySelectorAll(".local-nav span");
-  locals.forEach((item) => {
+  const gray = document.querySelectorAll(".nav-category .nav-li");
+  gray.forEach((item) => {
     item.addEventListener("mouseover", (e) => {
-      e.target.style.color = 'darkviolet';
+      e.target.classList.add("ba");
+      e.target.style.color = 'rgb(95, 0, 128)';
     })
   })
-  locals.forEach((item) => {
+
+  gray.forEach((item) => {
     item.addEventListener("mouseout", (e) => {
-      e.target.style.color = 'black';
+      e.target.classList.remove("ba");
+      e.target.style.color = 'rgb(51, 51, 51)';
     })
   })
-
-
-  const kind_button = document.querySelector(".kind-button");
-  const kind_nav = document.querySelector(".kind-nav");
-  kind_button.addEventListener("click", (e) => {
-    if(kind_nav.style.display === 'none') {
-      kind_nav.style.display = 'block';
-    }else{
-      kind_nav.style.display = 'none';
-    }
-    
-  })
-
-  const kinds = document.querySelectorAll(".kind-nav span");
-  kinds.forEach((item) => {
-    item.addEventListener("mouseover", (e) => {
-      e.target.style.color = 'darkviolet';
-    })
-  })
-  kinds.forEach((item) => {
-    item.addEventListener("mouseout", (e) => {
-      e.target.style.color = 'black';
-    })
-  })
-
 
 
 

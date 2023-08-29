@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>신상1</title>
   <link rel="stylesheet" href="신상_1상세page.css">
-
+  <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
+  <style>
+    body{
+      font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+    }
+  </style> -->
 </head>
 <body>
 <div id="wrap">
@@ -226,6 +231,7 @@
                             <div>16,900원</div>
                           </div>
                         </div>
+                        <!-- <span class="extra-span"></span> -->
                       </li>
                       <li class="extra-li1">
                         <div class="extra-div1">
@@ -290,7 +296,7 @@
             <div class="direct-check">
               <button class="b1" onclick="heart()">
                 <span>
-                  <img src="../밀키트_사진들/찜_하트(빈것).svg" alt="" class="s1">
+                  <img src="../밀키트_사진들/찜_하트빈것.svg" alt="">
                 </span>
               </button>
               
@@ -589,26 +595,32 @@
     
   }
 
+
+  
   function heart() {
     const heart = document.querySelector(".direct-check .b1");
     const img = document.querySelector(".direct-check .b1 img");
 
-   
-    if(img.src !== "../밀키트_사진들/찜하트(빈것).svg"){
-      img.src = "../밀키트_사진들/찜_빨간색하트.svg"
+
+
+    if(img.classList.contains("full-heart")) {
+      img.classList.remove("full-heart")
+      img.classList.add("empty-heart");
+    }else{
+      img.classList.add("full-heart");
     }
-    
 
   }
 
 
 
+  // const ptag = document.querySelectorAll(".extra-p");
+  // ptag.forEach((item) => {
+  //   item.addEventListener("mouseover", (e) => {
+  //     e.target.classList.add("ba");
+  //   })
+  // })
 
-
-
-
-
-  
 
 
 </script>
