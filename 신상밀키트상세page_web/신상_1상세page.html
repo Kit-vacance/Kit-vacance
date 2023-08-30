@@ -220,20 +220,45 @@
                       </div>
                     </div>
                   </div>
+
+
+                  <div class="product-check-div1">
+                    <div class="product-check-div2">
+                      <span>만두전골-순한맛</span>
+                    </div>
+                    <div class="product-check-div3">
+                      <div class="product-check-div4">
+                        <button class="b1" onclick="decrease()"></button>
+                        <div class="div1">1</div>
+                        <button class="b2" onclick="increase()"></button>
+                      </div>
+                      <div class="product-check-div5">
+                        <!-- <span class="sp1">15,000원</span> -->
+                        <span class="sp2">16,900원</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-check-div1">
+                    <div class="product-check-div2">
+                      <span>만두전골-덜매운맛</span>
+                    </div>
+                    <div class="product-check-div3">
+                      <div class="product-check-div4">
+                        <button class="b1" onclick="decrease()"></button>
+                        <div class="div1">1</div>
+                        <button class="b2" onclick="increase()"></button>
+                      </div>
+                      <div class="product-check-div5">
+                        <!-- <span class="sp1">15,000원</span> -->
+                        <span class="sp2">16,900원</span>
+                      </div>
+                    </div>
+                  </div>
+
+
                   <div class="extra">
                     <ul class="extra-ul">
-                      <li class="extra-li1">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-아주순한맛<span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                        <!-- <span class="extra-span"></span> -->
-                      </li>
-                      <li class="extra-li1">
+                      <li class="extra-li1" onclick="get()">
                         <div class="extra-div1">
                           <p class="extra-p">
                             <span>만두전골-순한맛</span>
@@ -243,7 +268,17 @@
                           </div>
                         </div>
                       </li>
-                      <li class="extra-li1">
+                      <li class="extra-li1" onclick="get()">
+                        <div class="extra-div1">
+                          <p class="extra-p">
+                            <span>만두전골-덜매운맛</span>
+                          </p>
+                          <div class="extra-div2">
+                            <div>16,900원</div>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="extra-li1" onclick="get()">
                         <div class="extra-div1">
                           <p class="extra-p">
                             <span>만두전골-보통맛</span>
@@ -253,7 +288,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="extra-li1">
+                      <li class="extra-li1" onclick="get()">
                         <div class="extra-div1">
                           <p class="extra-p">
                             <span>만두전골-매운맛</span>
@@ -263,7 +298,7 @@
                           </div>
                         </div>
                       </li>
-                      <li class="extra-li1">
+                      <li class="extra-li1" onclick="get()">
                         <div class="extra-div1">
                           <p class="extra-p">
                             <span>만두전골-아주매운맛</span>
@@ -582,6 +617,9 @@
   function remove() {
     const extra = document.querySelector(".main-section-3 .extra");
     const svg = document.querySelector(".dd-div4 svg");
+
+
+    const colors = document.querySelectorAll(".extra-li1");
     if(extra.style.display !== 'none') {
       extra.style.display = 'none';
       svg.classList.remove("go");
@@ -590,6 +628,19 @@
     else{
       extra.style.display = 'block';
       svg.classList.add("go");
+
+      
+      colors.forEach((item) => {
+        item.addEventListener("mouseenter", (e) => {
+        e.target.classList.add("background");
+    })
+    })
+
+      colors.forEach((item) => {
+        item.addEventListener("mouseleave", (e) => {
+        e.target.classList.remove("background");
+    })
+    })
       
     }
     
@@ -613,6 +664,30 @@
   }
 
 
+  function get() {
+    const view = document.querySelector(".product-check-div1");
+    const v2 = document.querySelector(".product-check-div2 span");
+    const view_1 = document.querySelector(".product-check-div1 span");
+    const extra = document.querySelector(".main-section-3 .extra");
+    const exs = document.querySelectorAll(".extra-li1 .extra-p span");
+
+    const svg = document.querySelector(".dd-div4 svg");
+
+    extra.style.display = 'none';
+    svg.classList.remove("go");
+
+    exs.forEach((item) => {
+      if(item.style.innerText === v2.style.innerText) {
+        view.style.display = 'block';
+      }else{
+        // view.style.display = 'none';
+      }
+      
+    })
+    
+  }
+
+
 
   // const ptag = document.querySelectorAll(".extra-p");
   // ptag.forEach((item) => {
@@ -620,6 +695,8 @@
   //     e.target.classList.add("ba");
   //   })
   // })
+
+
 
 
 

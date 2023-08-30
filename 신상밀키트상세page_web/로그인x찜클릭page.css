@@ -35,6 +35,11 @@ html, button, input, select, textarea {
 }
 
 
+.body{
+  overflow-y: hidden;
+}
+
+
 
 .header-popup {
   background-color: rgb(95, 0, 128);
@@ -1223,7 +1228,7 @@ html, button, input, select, textarea {
   -webkit-tap-highlight-color: transparent;
   z-index: 1;
   /* justify-content: center; */
-  margin: 0;
+  margin: 0 auto;
   /* padding: 0 1.6em; */
   color: #545454;
   font-size: 1.125em;

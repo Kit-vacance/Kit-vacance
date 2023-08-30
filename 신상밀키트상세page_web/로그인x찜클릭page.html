@@ -563,9 +563,12 @@
     const img = document.querySelector(".direct-check .b1 img");
 
     const ok = document.querySelector(".heart-container");
+    const body = document.querySelector("body");
 
     ok.style.display = 'block';
+    body.classList.add("body");
 
+    
     // if(img.classList.contains("full-heart")) {
     //   img.classList.remove("full-heart")
     //   img.classList.add("empty-heart");
@@ -608,8 +611,12 @@
 
   function loginheart() {
     const ok = document.querySelector(".heart-container");
+    const body = document.querySelector("body");
 
     ok.style.display = 'none';
+    body.classList.remove("body");
+
+    
 
   }
 
