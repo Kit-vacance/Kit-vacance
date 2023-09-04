@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>신상1</title>
-  <link rel="stylesheet" href="신상_1상세page.css">
+  <title>이벤트page</title>
+  <link rel="stylesheet" href="이벤트.css">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
   <style>
     body{
@@ -13,7 +13,6 @@
   </style> -->
 </head>
 <body>
-  <!-- 수량 증가시키는 버튼 수정 필수!! -->
 <div id="wrap">
     <div class="header-popup">
       <div class="header-middle">
@@ -149,260 +148,48 @@
     </div>
   </div>
 
-  <div class="rest">
-    <div class="rest-1">
-      <main class="main">
-        <div class="main-picture"></div>
-        <section class="main-section">
-          <div class="main-section-1">
-            <div>
-              <h1>만두전골(2인)</h1>
-            </div>
-          </div>
-          <h2>
-            <span>16,900원</span>
-          </h2>
-          <div class="main-section-2">
-            <dl class="dl-1">
-              <dt>배송</dt>
-              <dd>
-                <p class="p1">판매자배송</p>
-                <p class="p2">주문 후 2~5일 배송</p>
-              </dd>
-            </dl>
-            <dl class="dl-2">
-              <dt>판매자</dt>
-              <dd>
-                <p class="p1">주식회사 아이지코리아</p>
-              </dd>
-            </dl>
-            <dl class="dl-3">
-              <dt>포장타입</dt>
-              <dd>
-                <p class="p1">상온 (종이포장)</p>
-                <p class="p2">택배배송은 에코 포장이 스티로폼으로 대체됩니다.</p>
-              </dd>
-            </dl>
-            <dl class="dl-4">
-              <dt>원산지</dt>
-              <dd>
-                <p class="p1">대한민국</p>
-              </dd>
-            </dl>
-            <dl class="dl-5">
-              <dt>A/S 안내</dt>
-              <dd>
-                <p class="p1">031-505-3052
-                  스티커 제거 및 사용후에는 교환 및 반품 불가 
-                  고객변심 반품의 경우에는 7일이내 (배송비 6000원 청구)</p>
-              </dd>
-            </dl>
-          </div>
-          <div class="main-section-3">
-            <div class="product-check">
-              <dl>
-                <dt>상품 선택</dt>
-                <dd>
-                  <div class="dd-div1">
-                    <div class="dd-div2">
-                      <div class="dd-div3">
-                        <div class="dd-div4">
-                          <div tabindex="0" role="button" onclick="remove()" aria-haspopup="listbox" aria-label="Without label">상품을 선택해주세요</div>
-                          <input>
-                          <svg>
-                            <path></path>
-                          </svg>
-                          <fieldset>
-                            <legend>
-                              <span>&ZeroWidthSpace;</span>
-                            </legend>
-                          </fieldset>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+  </div>
+  <div class="eventView">
+    <div class="eventView2">
+      <img src="../밀키트_사진들/이벤트사진_1.webp" alt="" class="img1">
+      <h3>BENEFIT 신규 고객이라면 1만원 쿠폰 받고 장 보세요.</h3>
+      <p>쿠폰 다운일로부터 3일 이내 사용 가능해요</p>
+      <div class="coupon">
+        <img src="../밀키트_사진들/이벤트사진_2.webp" alt="" class="img2">
+        <span>신규 고객 전용 10,000원. 2만원 이상 첫 주문 시 사용 가능</span>
+        <a href="" onclick="coupondown()">
+          <span>쿠폰 다운로드</span>
+        </a>
 
 
-                  <div class="product-check-div1">
-                    <div class="product-check-div2">
-                      <span>만두전골-순한맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-check-div1-2">
-                    <div class="product-check-div2">
-                      <span>만두전골-덜매운맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-check-div1-3">
-                    <div class="product-check-div2">
-                      <span>만두전골-보통맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-check-div1-4">
-                    <div class="product-check-div2">
-                      <span>만두전골-매운맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="product-check-div1-5">
-                    <div class="product-check-div2">
-                      <span>만두전골-아주매운맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="extra">
-                    <ul class="extra-ul">
-                      <li class="extra-li1" onclick="get1()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-순한맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get2()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-덜매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get3()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-보통맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get4()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get5()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-아주매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  
-                </dd>
-              </dl>
-            </div>
-            <div class="total-price">
-              <div class="total-price-1">
-                <div class="total-price-1-1">
-                  <span class="sp1">총 상품금액 :</span>
-                  <span class="sp2">0</span>
-                  <span class="sp3">원</span>
-                </div>
-                <div class="total-price-1-2">
-                  <span class="sp1">적립</span>
-                  <span class="sp2">로그인 후, 적립 혜택 제공</span>
-                  
+        <div class="heart-container" style="display: none;">
+          <div class="heart-div0">
+            <div class="heart-header"></div>
+            <div class="heart-div1">
+              <div class="heart-div2">
+                <div class="heart-div3">쿠폰이 지급되었습니다.</div>
+                <div class="heart-div4" onclick="loginheart()">
+                  <button class="heart-b1">확인</button>
                 </div>
               </div>
             </div>
-            <div class="direct-check">
-              <button class="b1" onclick="heart()">
-                <span>
-                  <img src="../밀키트_사진들/찜_하트빈것.svg" alt="">
-                </span>
-              </button>
-              
-              <div class="div-1">
-                <button  type="button" radius="3">
-                  <span>바로구매</span>
-                </button>
-              </div>
+            <!-- <div class="heart-action"></div> -->
             </div>
           </div>
-        </section>
-      </main>
-      <nav class="epilogue">
-        <ul>
-          <li class="li-1">
-            <a href="">
-              <span>후기</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
+        <!-- <div class="morder1">
+          <div class="morder2">
+            <div class="morder4">
+
+            </div>
+            <div class="morder5"></div>
+          </div>
+          <div class="morder3"></div>
+        </div>
+      </div> -->
     </div>
   </div>
+
+
 
   <div class="last-explain">
     <div class="footer">
@@ -665,9 +452,6 @@
   function remove() {
     const extra = document.querySelector(".main-section-3 .extra");
     const svg = document.querySelector(".dd-div4 svg");
-
-
-    const colors = document.querySelectorAll(".extra-li1");
     if(extra.style.display !== 'none') {
       extra.style.display = 'none';
       svg.classList.remove("go");
@@ -676,19 +460,6 @@
     else{
       extra.style.display = 'block';
       svg.classList.add("go");
-
-      
-      colors.forEach((item) => {
-        item.addEventListener("mouseenter", (e) => {
-        e.target.classList.add("background");
-    })
-    })
-
-      colors.forEach((item) => {
-        item.addEventListener("mouseleave", (e) => {
-        e.target.classList.remove("background");
-    })
-    })
       
     }
     
@@ -700,14 +471,19 @@
     const heart = document.querySelector(".direct-check .b1");
     const img = document.querySelector(".direct-check .b1 img");
 
+    const ok = document.querySelector(".heart-container");
+    const body = document.querySelector("body");
 
+    ok.style.display = 'block';
+    body.classList.add("body");
 
-    if(img.classList.contains("full-heart")) {
-      img.classList.remove("full-heart")
-      img.classList.add("empty-heart");
-    }else{
-      img.classList.add("full-heart");
-    }
+    
+    // if(img.classList.contains("full-heart")) {
+    //   img.classList.remove("full-heart")
+    //   img.classList.add("empty-heart");
+    // }else{
+    //   img.classList.add("full-heart");
+    // }
 
   }
 
@@ -742,111 +518,22 @@
   }
 
 
+  function loginheart() {
+    const ok = document.querySelector(".heart-container");
+    const body = document.querySelector("body");
+
+    ok.style.display = 'none';
+    body.classList.remove("body");
 
 
-  function get1() {
-    const view = document.querySelector(".product-check-div1");
-
-    const v2 = document.querySelectorAll(".product-check-div2");
-
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const ex = document.querySelector(".extra-li1 .extra-p");
-    const svg = document.querySelector(".dd-div4 svg");
-
-
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    view.style.display = 'block';
-
-  }
-
-  function get2() {
-    const view = document.querySelector(".product-check-div1-2");
-
-    const v2 = document.querySelectorAll(".product-check-div2");
-
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const ex = document.querySelector(".extra-li1 .extra-p");
-    const svg = document.querySelector(".dd-div4 svg");
-
-
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    view.style.display = 'block';
-
-  }
-
-  function get3() {
-    const view = document.querySelector(".product-check-div1-3");
-
-    const v2 = document.querySelectorAll(".product-check-div2");
-
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const ex = document.querySelector(".extra-li1 .extra-p");
-    const svg = document.querySelector(".dd-div4 svg");
-
-
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    view.style.display = 'block';
-
-  }
-
-  function get4() {
-    const view = document.querySelector(".product-check-div1-4");
-
-    const v2 = document.querySelectorAll(".product-check-div2");
-
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const ex = document.querySelector(".extra-li1 .extra-p");
-    const svg = document.querySelector(".dd-div4 svg");
-
-
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    view.style.display = 'block';
-
-  }
-
-  function get5() {
-    const view = document.querySelector(".product-check-div1-5");
-
-    const v2 = document.querySelectorAll(".product-check-div2");
-
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const ex = document.querySelector(".extra-li1 .extra-p");
-    const svg = document.querySelector(".dd-div4 svg");
-
-
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    view.style.display = 'block';
 
   }
 
 
-  // const ptag = document.querySelectorAll(".extra-p");
-  // ptag.forEach((item) => {
-  //   item.addEventListener("mouseover", (e) => {
-  //     e.target.classList.add("ba");
-  //   })
-  // })
-
+  function coupondown() {
+    const ok = document.querySelector(".heart-container");
+    ok.style.display = 'block';
+  }
 
 
 
