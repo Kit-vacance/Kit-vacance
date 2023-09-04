@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="login.css">
+  <link rel="stylesheet" href="../신상밀키트page_web/신상밀키트page.css">
   <title>킷캉스- 로그인</title>
 </head>
 <body>
+  <div id="wrap">
+    <div class="header">
+      <div class="header-top">
+        <div class="join">
+          <a href="../join/join.html" class="join-button" >회원가입</a>
+          <div class="slash1"></div>
+          <a href="../login/login.html" class="login-button">로그인</a>
+          <div class="slash2"></div>
+          <a href="../mypage/mypage.html" class="mypage-button">마이페이지</a>
+          <div class="slash2"></div>
+          <a href="" class="home-button">홈</a>
+        </div>
+      <div class="search"></div>
+
+
+
+
   <div id="__next" data-reactroot>
       <div class="login_areaw">
         <div class="login_head">로그인</div>
@@ -16,6 +34,7 @@
               <div class="input_first">
                 <div class="input_info2">
                   <input data-testid="input-box" name="id" placeholder="아이디를 입력해주세요" type="text" class="input_content" value="">
+                  
                 </div> 
               </div>
               <div class="input_first">
@@ -27,8 +46,11 @@
             <div class="search_areaw">
               <a class="search_idw">아이디찾기</a>
               <span class="slice_bar2"></span>
-              <a class="search_idw">비밀번호찾기</a>
-            </div>
+              <a class="search_pww">비밀번호찾기</a>
+              </div>
+              <div class="notice_area">
+                <p class="notice_red" id="red1"></p>
+              </div>
             <div class="buttom_button">
               <button class="login_button2" type="submit" height="54" radius="3"><span class="add_address2">로그인</span></button>
               <button class="join_button2" type="button" height="54" radius="3"><span class="add_address2">회원가입</span></button>
@@ -38,4 +60,5 @@
       </div>
   </div>
 </body>
+  <script src="login.js"></script>
 </html>

@@ -42,18 +42,22 @@
           <div class="input_outline">
             <div class="notice_withdrawal">
               <div class="input_info2">
-                <input data-testid="input-box" id="password" name="password" placeholder="현재 비밀번호를 입력" type="password" class="input_content" value="">
+                <input data-testid="input-box" id="password" name="password" placeholder="현재 비밀번호를 입력" type="password" class="input_content" value="True">
               </div>
             </div>
           </div>
           <div class="block_"></div>
         </div>
         <div class="button_witdrawal">
-          <button class="button_cancel" type="button" height="44"><span class="add_address2">취소</span></button>
-          <button class="button_witdrawal2" type="submit" height="44"><span class="add_address2">탈퇴</span></button>
+          <button class="button_cancel" type="button" height="44" id="cancel"><span class="add_address2">취소</span></button>
+          <button class="button_witdrawal2" type="submit" height="44" id="out"><span class="add_address2">탈퇴</span></button>
+        </div>
+        <div class="notice_area">
+          <p class="notice_red" id="red1"></p>
         </div>
       </form>
     </div>
   </div>
 </body>
+<script src="withdrawal.js"></script>
 </html>

@@ -224,3 +224,12 @@ input[type="radio" i] {
   margin: 0px 4px;
   border-radius: 3px;
 }
+.notice_area{
+  padding: 10px 0px
+}
+.notice_red{
+  text-align: center;
+  font-size: 13px;
+  color: rgb(240, 63, 64);
+  margin-top: -4px;
+}

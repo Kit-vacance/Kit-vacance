@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="search-pww.css">
-  <title>킷캉스- 비밀번호찾기</title>
+  <link rel="stylesheet" href="search-idw.css">
+  <title>킷캉스- 아이디찾기</title>
 </head>
 <body>
   <div id="__next" data-reactroot>
     <div class="search_idarea">
-      <div class="search_idtitle">비밀번호찾기</div>
+      <div class="search_idtitle">아이디찾기</div>
       <div class="search_bottom">
         <div class="prove_email2">
           <button type="button" class="prove_email">이메일 인증</button>
@@ -17,9 +17,9 @@
       <form class="input_prove">
         <div class="name_area">
           <div class="name_area2">
-            <label for="id" class="name_t">아이디</label>
+            <label for="name" class="name_t">이름</label>
             <div class="input_info2">
-              <input data-testid="input-box" id="name" name="id" placeholder="아이디를 입력해주세요" type="text" class="input_content" value="">
+              <input data-testid="input-box" id="name" name="name" placeholder="이름을 입력해 주세요" type="text" class="input_content" value="">
             </div>
           </div>
         </div>
@@ -29,10 +29,14 @@
           <div class="input_info2">
             <input data-testid="input-box" id="email" name="email" placeholder="이메일을 입력해 주세요" type="email" class="input_content" value="">
           </div>
+          <div class="notice_area">
+            <p class="notice_red" id="red1"></p>
           </div>
+         </div>
         </div>
+       
         <div class="confirm_area">
-          <button class="confirm_button" type="submit" disabled radius="4">
+          <button class="confirm_button" type="submit" >
             <span class="add_address2">확인</span>
           </button>
         </div>
@@ -41,4 +45,5 @@
     </div>
   </div>
 </body>
+<script src="search-idw.js"></script>
 </html>

@@ -80,6 +80,22 @@ a {
   background-color: transparent;
   text-decoration: none;
 }
+p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+.notice_area{
+  padding: 10px 0px
+}
+.notice_red{
+  font-size: 15px;
+    color: rgb(240, 63, 64);
+    margin-top: -4px;
+}
+.se
 .search_idarea{
   min-width: 1050px;
   padding: 50px 0px;

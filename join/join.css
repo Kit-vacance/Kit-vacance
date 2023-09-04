@@ -447,10 +447,10 @@ p{
 .check_agree{
   overflow: hidden;
   position: absolute;
-  clip: rect(0px, 0px, 0px, 0px);
+  /* clip: rect(0px, 0px, 0px, 0px);
   clip-path: inset(50%);
   width: 1px;
-  height: 1px;
+  height: 1px; */
 }
 .between_space{
   margin-right: 12px;
@@ -527,4 +527,21 @@ svg :not(:root){
   color: rgb(255, 255, 255);
   background-color: rgb(95, 0, 128);
   border: 0px none;
+}
+.notice_area{
+  padding: 10px 0px
+}
+.notice_red{
+  font-size: 13px;
+  color: rgb(240, 63, 64);
+  margin-top: -4px;
+}
+.home-button{
+  text-decoration: none;
+
+
+  color: #333;
+
+
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
 }
