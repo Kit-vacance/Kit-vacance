@@ -41,4 +41,28 @@ const notice_Red5= document.querySelector("#red5");
   }else{notice_Red4.innerText="이름이 정상적으로 입력되었습니다."}
 
 })
+
+document.addEventListener("DOMContentLoaded", function(){
+  const selectAll= document.getElementById("TermsAgreeAll");
+  const othercheck= document.querySelectorAll('input[type="checkbox"]');
+
+
+  selectAll.addEventListener("change", function(){
+    const isChecked= selectAll.checked;
+
+  othercheck.forEach(function(checkbox){
+    checkbox.checked= isChecked;
+  });
+    
+  });
+
+  othercheck.forEach(function(checkbox){
+    checkbox.addEventListener("change", function(){
+      if(!checkbox.checked){
+        selectAll.checked=false;
+      }
+    })
+  })
+});
+
  

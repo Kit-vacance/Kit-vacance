@@ -189,3 +189,12 @@ p{
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(95, 0, 128);
 }
+.home-button{
+  text-decoration: none;
+
+
+  color: #333;
+
+
+  font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
+}

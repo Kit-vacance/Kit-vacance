@@ -8,9 +8,24 @@
   <link rel="stylesheet" href="modify.css">
   <link rel="stylesheet" href="shopping-address.css">
   <link rel="stylesheet" href="mypage-check.css">
+  <link rel="stylesheet" href="../신상밀키트page_web/신상밀키트page.css">
   <title>마이페이지</title>
 </head>
 <body>
+  <div id="wrap">
+    <div class="header">
+      <div class="header-top">
+        <div class="join">
+          <a href="../join/join.html" class="join-button" >회원가입</a>
+          <div class="slash1"></div>
+          <a href="../login/login.html" class="login-button">로그인</a>
+          <div class="slash2"></div>
+          <a href="mypage.html" class="mypage-button">마이페이지</a>
+          <div class="slash2"></div>
+          <a href="" class="home-button">홈</a>
+
+      </div>
+      
   <div id="__next" data-reactroot>
     <div class="wmy_b">
       <div class="wmy_c">
@@ -33,12 +48,12 @@
               </a>
             </li>
             <li>
-              <a class="wmy_c4">상품 후기
+              <a class="wmy_c4" id="review">상품 후기
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><defs><path id="gfk9q0rhta" d="M1.657 1.657L9.657 1.657 9.657 9.657"></path></defs><g fill="none" fill-rule="evenodd"><g><g><g><g transform="translate(-339 -398) translate(0 386) translate(339 12) translate(4.69 6.343)"><use stroke="#999" stroke-linecap="round" stroke-width="1.8" stroke-linejoin="round" transform="rotate(45 5.657 5.657)" xlink:href="#gfk9q0rhta"></use></g></g></g></g></g></svg>
               </a>
             </li>
             <li>
-              <a class="wmy_c4">결제수단
+              <a class="wmy_c4" id="pay">결제수단
                 <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24"><defs><path id="gfk9q0rhta" d="M1.657 1.657L9.657 1.657 9.657 9.657"></path></defs><g fill="none" fill-rule="evenodd"><g><g><g><g transform="translate(-339 -398) translate(0 386) translate(339 12) translate(4.69 6.343)"><use stroke="#999" stroke-linecap="round" stroke-width="1.8" stroke-linejoin="round" transform="rotate(45 5.657 5.657)" xlink:href="#gfk9q0rhta"></use></g></g></g></g></g></svg>
               </a>
             </li>
@@ -188,7 +203,7 @@
                   <div class="input_outline">
                     <div class="modify_id3">
                       <div class="input_name2">
-                        <input data-testid="input-box" id="mobileNumber" name="mobileNumber" placeholder="숫자만 입력해주세요" type="text" readonly class="input_content" value="">
+                        <input data-testid="input-box" id="mobileNumber" name="mobileNumber" placeholder="숫자만 입력해주세요" type="text"  class="input_content" value="">
                       </div>
                     </div>
                   </div>
@@ -253,14 +268,18 @@
               </div> 
             </div>
               <div class="block_"></div>
+           
           </div>
           <div class="modify_end">
-            <button class="side_button2">
+            <button class="side_button2" type="button" id="exit">
               <span class="add_address2">탈퇴하기</span>
             </button>
-            <button class="submit_modify">
+            <button class="submit_modify" type="button" id="modify1">
               <span class="add_address2">회원정보수정</span>
             </button>
+          </div>
+          <div class="notice_area">
+            <p class="notice_red" id="red1"></p>
           </div>
               </form>
         
