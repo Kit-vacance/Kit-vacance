@@ -1,14 +1,3 @@
-const button = document.querySelector(".x-button");
-const banner = document.querySelector(".header-popup");
-
-button.addEventListener("click", (e) => {
-  banner.style.display = "none";
-})
-
-
-
-
-
 document.getElementById("orderButton").addEventListener("click", function(){
   document.getElementById("orderContents").style.display="block";
   document.getElementById("checkProducts").style.display="none";
