@@ -1,3 +1,6 @@
+
+
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 
@@ -34,6 +37,8 @@
 html, button, input, select, textarea {
   font-family: "Noto Sans", "malgun gothic", AppleGothic, dotum, sans-serif;
 }
+
+
 
 
 
@@ -491,10 +496,19 @@ html, button, input, select, textarea {
   padding-top: 15px;
   padding-bottom: 20px;
 
+  font-size: 14px;
+  padding-left: 30px;
+  text-align: justify;
   
 }
 
-.nav-li a{
+.ba {
+  background-color: #E9E9E9;
+  font-weight: 600;
+  
+}
+
+/* .nav-li a{
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -504,9 +518,9 @@ html, button, input, select, textarea {
 
 
   padding-left: 30px;
-}
+} */
 
-.nav-li a span{
+/* .nav-li a span{
   margin-right: 4px;
   font-weight: 400;
   font-size: 14px;
@@ -523,7 +537,7 @@ html, button, input, select, textarea {
 
 
   padding-right: 25px  ;
-}
+} */
 
 .rest {
   position: relative;

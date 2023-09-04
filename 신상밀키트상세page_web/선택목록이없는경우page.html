@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>신상1</title>
-  <link rel="stylesheet" href="신상_1상세page.css">
+  <title>선택목록이없는 상세보기page</title>
+  <link rel="stylesheet" href="선택목록이없는경우page.css">
   <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap">
   <style>
     body{
@@ -202,29 +202,9 @@
               <dl>
                 <dt>상품 선택</dt>
                 <dd>
-                  <div class="dd-div1">
-                    <div class="dd-div2">
-                      <div class="dd-div3">
-                        <div class="dd-div4">
-                          <div tabindex="0" role="button" onclick="remove()" aria-haspopup="listbox" aria-label="Without label">상품을 선택해주세요</div>
-                          <input>
-                          <svg>
-                            <path></path>
-                          </svg>
-                          <fieldset>
-                            <legend>
-                              <span>&ZeroWidthSpace;</span>
-                            </legend>
-                          </fieldset>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-
                   <div class="product-check-div1">
                     <div class="product-check-div2">
-                      <span>만두전골-순한맛</span>
+                      <span>[경복궁 BLACK] 영양갈비탕</span>
                     </div>
                     <div class="product-check-div3">
                       <div class="product-check-div4">
@@ -233,84 +213,11 @@
                         <button class="b2" onclick="increase()"></button>
                       </div>
                       <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
+                        <span class="sp1">15,000원</span>
+                        <span class="sp2">13,950원</span>
                       </div>
                     </div>
                   </div>
-                  <div class="product-check-div1">
-                    <div class="product-check-div2">
-                      <span>만두전골-덜매운맛</span>
-                    </div>
-                    <div class="product-check-div3">
-                      <div class="product-check-div4">
-                        <button class="b1" onclick="decrease()"></button>
-                        <div class="div1">1</div>
-                        <button class="b2" onclick="increase()"></button>
-                      </div>
-                      <div class="product-check-div5">
-                        <!-- <span class="sp1">15,000원</span> -->
-                        <span class="sp2">16,900원</span>
-                      </div>
-                    </div>
-                  </div>
-
-
-                  <div class="extra">
-                    <ul class="extra-ul">
-                      <li class="extra-li1" onclick="get()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-순한맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-덜매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-보통맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                      <li class="extra-li1" onclick="get()">
-                        <div class="extra-div1">
-                          <p class="extra-p">
-                            <span>만두전골-아주매운맛</span>
-                          </p>
-                          <div class="extra-div2">
-                            <div>16,900원</div>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                  
                 </dd>
               </dl>
             </div>
@@ -617,9 +524,6 @@
   function remove() {
     const extra = document.querySelector(".main-section-3 .extra");
     const svg = document.querySelector(".dd-div4 svg");
-
-
-    const colors = document.querySelectorAll(".extra-li1");
     if(extra.style.display !== 'none') {
       extra.style.display = 'none';
       svg.classList.remove("go");
@@ -628,19 +532,6 @@
     else{
       extra.style.display = 'block';
       svg.classList.add("go");
-
-      
-      colors.forEach((item) => {
-        item.addEventListener("mouseenter", (e) => {
-        e.target.classList.add("background");
-    })
-    })
-
-      colors.forEach((item) => {
-        item.addEventListener("mouseleave", (e) => {
-        e.target.classList.remove("background");
-    })
-    })
       
     }
     
@@ -664,40 +555,37 @@
   }
 
 
-  function get() {
-    const view = document.querySelector(".product-check-div1");
-    const v2 = document.querySelector(".product-check-div2 span");
-    const view_1 = document.querySelector(".product-check-div1 span");
-    const extra = document.querySelector(".main-section-3 .extra");
-    const exs = document.querySelectorAll(".extra-li1 .extra-p span");
-
-    const svg = document.querySelector(".dd-div4 svg");
-
-    extra.style.display = 'none';
-    svg.classList.remove("go");
-
-    exs.forEach((item) => {
-      if(item.style.innerText === v2.style.innerText) {
-        view.style.display = 'block';
-      }else{
-        // view.style.display = 'none';
-      }
+  function decrease() {
+    const di = document.querySelector(".product-check-div4 .div1");
+    const b = document.querySelector(".product-check-div4 .b1");
+    di.innerText = parseInt(di.innerText)-1;
+    if(parseInt(di.innerText) >= 2) {
+      b.style.backgroundImage = "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMCAxNHYySDEwdi0yeiIgZmlsbD0iIzMzMyIgZmlsbC1ydWxlPSJub256ZXJvIi8+Cjwvc3ZnPgo=')";
       
-    })
-    
+    }else{
+      di.innerText = 1;
+      b.style.backgroundImage = "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMCAxNHYySDEwdi0yeiIgZmlsbD0iI0RERCIgZmlsbC1ydWxlPSJub256ZXJvIi8+Cjwvc3ZnPgo=')";
+    }
+
+
+
+
   }
 
+  function increase() {
+    
+    // count = count + 1;
+    const di = document.querySelector(".product-check-div4 .div1");
+    const b = document.querySelector(".product-check-div4 .b1");
+    di.innerText = parseInt(di.innerText)+1;
+    if(parseInt(di.innerText) >= 2){
+      b.style.backgroundImage = "url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAiIGhlaWdodD0iMzAiIHZpZXdCb3g9IjAgMCAzMCAzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik0yMCAxNHYySDEwdi0yeiIgZmlsbD0iIzMzMyIgZmlsbC1ydWxlPSJub256ZXJvIi8+Cjwvc3ZnPgo=')";
+    }
 
+    
 
-  // const ptag = document.querySelectorAll(".extra-p");
-  // ptag.forEach((item) => {
-  //   item.addEventListener("mouseover", (e) => {
-  //     e.target.classList.add("ba");
-  //   })
-  // })
-
-
-
+    
+  }
 
 
 </script>
